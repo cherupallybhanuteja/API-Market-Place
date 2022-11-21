@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+}
+.left-container {
+  float: left;
+  background-color: #f7f8fa80;
+  overflow-wrap: break-word;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-img {
+  width: 80%;
+}
+
+.login-title {
+  text-align: left;
+  width: 80%;
+}
+
+.login-description {
+  text-align: left;
+  width: 80%;
+}
+
+.right-container {
+  float: right;
+  background-color: #fff;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media quries */
+
+@media screen and (max-width: 720px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-container {
+    padding-top: 10px;
+    height: 40vh;
+    width: 100%;
+  }
+
+  .right-container {
+    margin: 20px 0px;
+    width: 100%;
+  }
+}
